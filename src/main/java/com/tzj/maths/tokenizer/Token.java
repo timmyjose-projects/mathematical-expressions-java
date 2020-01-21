@@ -22,10 +22,10 @@ public class Token {
     }
   }
 
-  private Kind kind;
-  private String spelling;
-  private int line;
-  private int column;
+  public Kind kind;
+  public String spelling;
+  public int line;
+  public int column;
 
   public Token(final Kind kind, final String spelling, int line, int column) {
     if (Token.isKeyword(spelling)) {
